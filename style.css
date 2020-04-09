@@ -1,0 +1,68 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    background-color: linen;
+    margin: 0;
+    padding: 0;
+  }
+
+.masthead {
+  background-color: pink;
+  width: 100vw;
+  height: 50px;
+}
+
+.icon {
+  background-color: navy;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+  
+.zipsearch {
+  background-color: turquoise;
+  width: 60vw;
+  height: 30px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.currenttemp{
+  display: grid;
+  margin: auto;
+  margin-top: 30px;
+  background-color: pink;
+}
+
+.index {
+  background-color: orange;
+}
+
+.daytemp {
+  display: grid;
+  background-color: orange;
+}
+
+.weekforecast {
+  display: grid;
+}
+
+.dayone {
+  background-color: pink;
+}
+
+.daytwo {
+  background-color: pink;
+}
+
+.daythree {
+  background-color: pink;
+}
+
+.dayfour {
+  background-color: pink;
+}
+
+.dayfive {
+  background-color: pink;
+}
