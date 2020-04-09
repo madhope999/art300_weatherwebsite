@@ -9,20 +9,22 @@ body {
 .masthead {
   background-color: pink;
   width: 100vw;
-  height: 50px;
+  height: 60px;
+  padding-top: 20px;
 }
 
 .icon {
   background-color: navy;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: auto;
+  margin-right: 90vw;
 }
   
 .zipsearch {
   background-color: turquoise;
   width: 60vw;
-  height: 30px;
+  height: 50px;
   margin: auto;
   margin-top: 30px;
 }
@@ -30,39 +32,81 @@ body {
 .currenttemp{
   display: grid;
   margin: auto;
+  width: 30vw;
+  height: 20vw;
   margin-top: 30px;
   background-color: pink;
 }
 
 .index {
   background-color: orange;
+  width: 50vw;
+  height: 30px;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .daytemp {
   display: grid;
   background-color: orange;
+  height: 60px;
+  width: 75vw;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .weekforecast {
   display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .dayone {
   background-color: pink;
+  margin: auto;
+  margin-top: 30px;
+  width: 15vw;
+  height: 30vw;
 }
 
 .daytwo {
   background-color: pink;
+  margin: auto;
+  margin-top: 30px;
+  width: 15vw;
+  height: 30vw;
 }
 
 .daythree {
   background-color: pink;
+  margin: auto;
+  margin-top: 30px;
+  width: 15vw;
+  height: 30vw;
 }
 
 .dayfour {
   background-color: pink;
+  margin: auto;
+  margin-top: 30px;
+  width: 15vw;
+  height: 30vw;
 }
 
 .dayfive {
   background-color: pink;
+  margin: auto;
+  margin-top: 30px;
+  width: 15vw;
+  height: 30vw;
+}
+
+.footer {
+  background-color: navy;
+  margin: auto;
+  margin-top: 30px;
+  width: 100vw;
+  height: 30px;
 }
