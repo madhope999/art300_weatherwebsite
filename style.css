@@ -7,14 +7,15 @@ body {
   }
 
 .masthead {
-  background-color: pink;
+  display: grid;
+  background-color: #F2ADA7;
   width: 100vw;
   height: 60px;
   padding-top: 20px;
 }
 
 .icon {
-  background-color: navy;
+  background-color:#024873;
   width: 40px;
   height: 40px;
   margin: auto;
@@ -22,7 +23,7 @@ body {
 }
   
 .zipsearch {
-  background-color: turquoise;
+  background-color: #0A96A6;
   width: 60vw;
   height: 50px;
   margin: auto;
@@ -35,11 +36,11 @@ body {
   width: 30vw;
   height: 20vw;
   margin-top: 30px;
-  background-color: pink;
+  background-color: #F2ADA7;
 }
 
 .index {
-  background-color: orange;
+  background-color: #F5A45D;
   width: 50vw;
   height: 30px;
   margin: auto;
@@ -48,7 +49,7 @@ body {
 
 .daytemp {
   display: grid;
-  background-color: orange;
+  background-color: #F5A45D;
   height: 60px;
   width: 75vw;
   margin: auto;
@@ -64,7 +65,7 @@ body {
 }
 
 .dayone {
-  background-color: pink;
+  background-color:#F2ADA7;
   margin: auto;
   margin-top: 30px;
   width: 15vw;
@@ -72,7 +73,7 @@ body {
 }
 
 .daytwo {
-  background-color: pink;
+  background-color:#F2ADA7;
   margin: auto;
   margin-top: 30px;
   width: 15vw;
@@ -80,7 +81,7 @@ body {
 }
 
 .daythree {
-  background-color: pink;
+  background-color: #F2ADA7;
   margin: auto;
   margin-top: 30px;
   width: 15vw;
@@ -88,7 +89,7 @@ body {
 }
 
 .dayfour {
-  background-color: pink;
+  background-color: #F2ADA7;
   margin: auto;
   margin-top: 30px;
   width: 15vw;
@@ -96,7 +97,7 @@ body {
 }
 
 .dayfive {
-  background-color: pink;
+  background-color: #F2ADA7;
   margin: auto;
   margin-top: 30px;
   width: 15vw;
@@ -104,9 +105,173 @@ body {
 }
 
 .footer {
-  background-color: navy;
+  background-color: #024873;
   margin: auto;
   margin-top: 30px;
   width: 100vw;
   height: 30px;
+}
+
+/* Phone Style */
+@media screen and (max-width: 767px) {
+  body {
+    background-color: linen; 
+  }
+
+  .zipsearch {
+    background-color: #0A96A6;
+    width: 80vw;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .index {
+    background-color: #F5A45D;
+    width: 85vw;
+    height: 40px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .daytemp {
+    display: grid;
+    background-color: #F5A45D;
+    height: 50px;
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .currenttemp{
+    display: grid;
+    margin: auto;
+    width: 65vw;
+    height: 35vw;
+    margin-top: 30px;
+    background-color: #F2ADA7;
+  }
+
+  .weekforecast {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .dayone {
+    height: 65vw;
+    width: 50vw;
+  }
+  .daytwo {
+    height: 65vw;
+    width: 50vw;
+  }
+  .daythree {
+    height: 65vw;
+    width: 50vw;
+  }
+  .dayfour {
+    height: 65vw;
+    width: 50vw;
+  }
+  .dayfive {
+    height: 65vw;
+    width: 50vw;
+  }
+  
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  body {
+    background-color:linen;
+  }
+
+  .index {
+    background-color: #F5A45D;
+    width: 50vw;
+    height: 30px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .daytemp {
+    display: grid;
+    background-color: #F5A45D;
+    height: 60px;
+    width: 75vw;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .weekforecast {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .dayone {
+    height: 40vw;
+    width: 30vw;
+  }
+  .daytwo {
+    height: 40vw;
+    width: 30vw;
+  }
+  .daythree {
+    height: 40vw;
+    width: 30vw;
+  }
+  .dayfour {
+    height: 40vw;
+    width: 30vw;
+  }
+  .dayfive {
+    height: 40vw;
+    width: 30vw;
+  }
+  .daysix {
+    background-color: #F2ADA7;
+    margin: auto;
+    margin-top: 30px;
+    height: 40vw;
+    width: 30vw;
+
+  }
+
+  .currenttemp{
+    display: grid;
+    margin: auto;
+    width: 50vw;
+    height: 25vw;
+    margin-top: 30px;
+    background-color: #F2ADA7;
+  }
+
+  .index {
+    background-color: #F5A45D;
+    width: 90vw;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+
+.daytemp {
+  display: grid;
+  background-color: #F5A45D;
+  height: 50px;
+  width: 75vw;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+  
+  
 }
