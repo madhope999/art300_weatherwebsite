@@ -5,26 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <script src="keys.js"></script>
+
+        <script src="https://unpkg.com/@warnick/forecast-js/js/forecast.min.js" defer></script>
+        <link rel="stylesheet" href="https://unpkg.com/@warnick/forecast-js/css/forecast.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="masthead">
-        <div class="icon"></div>
-        <div class="search"></div>
+        <div class="title">
+            <h1> Clear Skies </h1>
+        </div>
     </div>
     <div class="zipsearch">
-        <div class="zip"></div>
+        <div class="zip">
+            <input type="text" id="name_1" name="fname" placeholder="Zipcode" />
+            <script src="script.js"></script>
+        </div>
     </div>
     <div class="currenttemp">
+        
+        <h1>CURRENT</h1>
+      <p class="description">{{current.description_main}}</p>
+      <p class="description_long">{{current.description_long}}</p>
+      <p class="icon">{{current.description_icon}}</p>
+
+      <p class="degree_symbol current">{{current.temp.current}}</p>
+      <p class="degree_symbol high">{{current.temp.high}}</p>
+      <p class="degree_symbol low">{{current.temp.low}}</p>
+
+      <p class="degree_symbol feelslike">{{current.temp.feelslike}}</p>
+      <p class="windspeed">{{current.wind.speed}}</p>
+      <p class="cloudcover">{{current.cloud_cover}}</p>
+
+      <p class="rain">{{current.rain}}</p>
+      <p class="snow">{{current.snow}}</p>
+
+      <p class="pressure">{{current.pressure}}</p>
+      <p class="humidity">{{current.humidity}}</p>
+
+      <p class="sunrise">{{current.sunrise}}</p>
+      <p class="sunset">{{current.sunset}}</p>
+
+      <p class="uv">{{current.uv}}</p>
+      <p class="air_quality">{{current.air_quality}}</p>
+
+
+
+
+
+        <div class="current">
+        </div>
         <div class="image"></div>
-        <div class="high"></div>
+        <div class="high">
+        </div>
         <div class="low"></div>
         <div class="precip"></div>
     </div>
     <div class="index">
-        <div class="uvindex"></div>
-        <div class="humidity"></div>
-        <div class="windmph"></div>
+        <div class="uvindex">
+        </div>
+        <div class="humidity">
+        </div>
+        <div class="windmph">
+        </div>
     </div>
     <div class="daytemp"></div>
     <div class="weekforecast">
@@ -66,6 +113,5 @@
         </div>
     </div>
     <div class="footer"></div>
-
 
 </body>
