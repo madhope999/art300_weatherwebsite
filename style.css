@@ -9,8 +9,12 @@ body {
   h1 {
     color:  #0A96A6;
     font-weight: bold;
-    font-size: 40px; 
+    font-size: 60px; 
+    margin: auto;
+  }
 
+  .title {
+    margin: auto;
   }
 
   .icon_01d{
@@ -50,7 +54,7 @@ body {
 
 .masthead {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background-color: #F2ADA7;
   width: 100vw;
   height: 70px;
@@ -76,6 +80,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #0A96A6;
+  grid-gap: 20px;
   color: #F2ADA7;
   font-size: x-large;
   width: 60vw;
@@ -85,6 +90,18 @@ body {
   padding-top: 5px;
   text-align: left;
   padding-left: 30px;
+}
+
+.city {
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.state {
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 input {
@@ -115,6 +132,14 @@ input {
   background-color: #F2ADA7;
 }
 
+.high {
+  text-align: center;
+}
+
+.low {
+  text-align: center;
+}
+
 .index {
   background-color: #F5A45D;
   color: #024873;
@@ -135,11 +160,21 @@ input {
   color: #024873;
   font-size: x-large;
   background-color: #F5A45D;
-  height: 60px;
   width: 75vw;
   margin: auto;
-  padding-left: 30px;
   margin-top: 30px;
+  text-align: center;
+}
+
+.daytime {
+  display: grid;
+  color: #024873;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 50px;
+  width: 75vw;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .weekforecast {
@@ -282,11 +317,6 @@ input {
     width: 50vw;
   }
 
-  .daysix {
-    height: 65vw;
-    width: 50vw;
-  }
-  
 }
 
 /* Tablet Styles */

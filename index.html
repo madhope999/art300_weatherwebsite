@@ -42,7 +42,6 @@
             <div class="zipsearch">
                 <div class="zip">
                     <input placeholder="Zipcode" v-on:input="zip_trigger" name="name" id="zip" />
-                     <p class="zip">{{location.zip}}</p>
                 </div>
                 <div class="cityname">
                     <p class="city">{{location.name}}</p>
@@ -97,6 +96,26 @@
                 </div>
                 <div class="hour6">
                     <p class="degree_symbol">{{hourly[6].temperature}}°</p>
+                </div>
+            </div>
+            <div class="daytime">
+                <div class="time1">
+                    <p>{{hourly[1].time}}</p>
+                </div>
+                <div class="time2">
+                    <p>{{hourly[2].time}}</p>
+                </div>
+                <div class="time3">
+                    <p>{{hourly[3].time}}</p>
+                </div>
+                <div class="time4">
+                    <p>{{hourly[4].time}}</p>
+                </div>
+                <div class="time5">
+                    <p>{{hourly[5].time}}</p>
+                </div>
+                <div class="time6">
+                    <p>{{hourly[6].time}}</p>
                 </div>
             </div>
             <div class="weekforecast">
@@ -168,20 +187,6 @@
                     </div>
                     <div class="precipchance">
                         <p>Precipitation: {{forecast[5].precip}}%</p>
-                    </div>
-                </div>
-                <div class="daysix">
-                    <div class="image">
-                        <p>{{forecast[6].description_icon}}</p>
-                    </div>
-                    <div class="hightemp">
-                        <p class="degree_symbol">High: {{forecast[6].max_temp}}°</p>
-                    </div>
-                    <div class="lowtemp">
-                        <p class="degree_symbol">Low: {{forecast[6].min_temp}}°</p>
-                    </div>
-                    <div class="precipchance">
-                        <p>Precipitation: {{forecast[6].precip}}%</p>
                     </div>
                 </div>
             </div>
