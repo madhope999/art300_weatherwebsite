@@ -58,6 +58,11 @@ body {
   text-align: left;
 }
 
+.image {
+  height: auto;
+  width: auto;
+}
+
 .logo {
   background-color:#024873;
   width: 50px;
@@ -68,7 +73,11 @@ body {
 }
   
 .zipsearch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #0A96A6;
+  color: #F2ADA7;
+  font-size: x-large;
   width: 60vw;
   height: 50px;
   margin: auto;
@@ -94,7 +103,11 @@ input {
 
 .currenttemp{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+  color: #0A96A6;
+  font-size: xx-large;
   margin: auto;
   width: 30vw;
   height: 20vw;
@@ -104,6 +117,8 @@ input {
 
 .index {
   background-color: #F5A45D;
+  color: #024873;
+  font-size: large;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 50vw;
@@ -117,6 +132,8 @@ input {
 .daytemp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  color: #024873;
+  font-size: x-large;
   background-color: #F5A45D;
   height: 60px;
   width: 75vw;
@@ -129,6 +146,9 @@ input {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  color: #024873;
+  font-size: x-large;
+  text-align: center;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -193,6 +213,7 @@ input {
 
   .zipsearch {
     background-color: #0A96A6;
+    font-size: large;
     width: 80vw;
     height: 40px;
     margin: auto;
@@ -202,6 +223,7 @@ input {
 
   .index {
     background-color: #F5A45D;
+    color: #024873;
     width: 85vw;
     height: 40px;
     margin: auto;
@@ -210,6 +232,8 @@ input {
 
   .daytemp {
     display: grid;
+    color: #024873;
+    font-size: large;
     background-color: #F5A45D;
     height: 50px;
     width: 90vw;
@@ -229,6 +253,8 @@ input {
 
   .weekforecast {
     display: grid;
+    color: #024873;
+    font-size: xx-large;
     grid-gap: 20px;
     grid-template-columns: 1fr;
     margin-right: 20px;
@@ -252,6 +278,11 @@ input {
     width: 50vw;
   }
   .dayfive {
+    height: 65vw;
+    width: 50vw;
+  }
+
+  .daysix {
     height: 65vw;
     width: 50vw;
   }
@@ -283,6 +314,8 @@ input {
   
   .weekforecast {
     display: grid;
+    color: #024873;
+    font-size: x-large;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     margin-right: 20px;
@@ -329,6 +362,8 @@ input {
 
   .index {
     background-color: #F5A45D;
+    color: #024873;
+    font-size: x-large;
     width: 90vw;
     height: 50px;
     margin: auto;
@@ -338,6 +373,8 @@ input {
 
 .daytemp {
   display: grid;
+  color: #024873;
+  font-size: large;
   background-color: #F5A45D;
   height: 50px;
   width: 75vw;

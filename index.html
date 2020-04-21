@@ -42,23 +42,26 @@
             <div class="zipsearch">
                 <div class="zip">
                     <input placeholder="Zipcode" v-on:input="zip_trigger" name="name" id="zip" />
-                    
-                    <p class="zip">{{location.zip}}</p>
+                     <p class="zip">{{location.zip}}</p>
+                </div>
+                <div class="cityname">
                     <p class="city">{{location.name}}</p>
+                </div>
+                <div class="statename">
                     <p class="state">{{location.state}}</p>
                 </div>
             </div>
             <div class="currenttemp">
-                <div class="current">
-                    <p class="degree_symbol current">{{current.temp.current}}</p>
-                </div>
                 <div class="image"></div>
                     <p class="icon_01d">{{current.description_icon}}</p>
+                <div class="current">
+                    <p class="degree_symbol current">{{current.temp.current}}°</p>
+                </div>
                 <div class="high">
-                    <p class="degree_symbol high">{{current.temp.high}}</p>
+                    <p class="degree_symbol high">High: {{current.temp.high}}°</p>
                 </div>
                 <div class="low">
-                    <p class="degree_symbol low">{{current.temp.low}}</p>
+                    <p class="degree_symbol low">Low: {{current.temp.low}}°</p>
                 </div>
                 <div class="precip">
                     <p class="rain">{{current.rain}}</p>
@@ -67,106 +70,118 @@
             </div>
             <div class="index">
                 <div class="uvindex">
-                    <p class="uv">{{current.uv}}</p>
+                    <p class="uv">UV Index: {{current.uv}}</p>
                 </div>
                 <div class="humidity">
-                    <p class="humidity">{{current.humidity}}</p>
+                    <p class="humidity">Humidity: {{current.humidity}}%</p>
                 </div>
                 <div class="windmph">
-                    <p class="windspeed">{{current.wind.speed}}</p>
+                    <p class="windspeed">Wind: {{current.wind.speed}}</p>
                 </div>
             </div>
             <div class="daytemp">
                 <div class="hour1">
-                    <p class="degree_symbol">{{hourly[1].temperature}}</p>
+                    <p class="degree_symbol">{{hourly[1].temperature}}°</p>
                 </div>
                 <div class="hour2">
-                    <p class="degree_symbol">{{hourly[2].temperature}}</p>
+                    <p class="degree_symbol">{{hourly[2].temperature}}°</p>
                 </div>
                 <div class="hour3">
-                    <p class="degree_symbol">{{hourly[3].temperature}}</p>
+                    <p class="degree_symbol">{{hourly[3].temperature}}°</p>
                 </div>
                 <div class="hour4">
-                    <p class="degree_symbol">{{hourly[4].temperature}}</p>
+                    <p class="degree_symbol">{{hourly[4].temperature}}°</p>
                 </div>
                 <div class="hour5">
-                    <p class="degree_symbol">{{hourly[5].temperature}}</p>
+                    <p class="degree_symbol">{{hourly[5].temperature}}°</p>
                 </div>
                 <div class="hour6">
-                    <p class="degree_symbol">{{hourly[6].temperature}}</p>
+                    <p class="degree_symbol">{{hourly[6].temperature}}°</p>
                 </div>
             </div>
             <div class="weekforecast">
                 <div class="dayone">
-                    <div class="image"></div>
+                    <div class="image">
+                        <p>{{forecast[1].description_icon}}</p>
+                    </div>
                     <div class="hightemp">
-                        <p class="degree_symbol">High - {{forecast[1].max_temp}}</p>
+                        <p class="degree_symbol">High: {{forecast[1].max_temp}}°</p>
                     </div>
                     <div class="lowtemp">
-                        <p class="degree_symbol">Low - {{forecast[1].min_temp}}</p>
+                        <p class="degree_symbol">Low: {{forecast[1].min_temp}}°</p>
                     </div>
                     <div class="precipchance">
-                        <p>{{forecast[1].precip}}</p>
+                        <p>Precipitation: {{forecast[1].precip}}%</p>
                     </div>
                 </div>
                 <div class="daytwo">
-                    <div class="image"></div>
+                    <div class="image">
+                        <p>{{forecast[2].description_icon}}</p>
+                    </div>
                     <div class="hightemp">
-                        <p class="degree_symbol">High - {{forecast[2].max_temp}}</p>
+                        <p class="degree_symbol">High: {{forecast[2].max_temp}}°</p>
                     </div>
                     <div class="lowtemp">
-                        <p class="degree_symbol">Low - {{forecast[2].min_temp}}</p>
+                        <p class="degree_symbol">Low: {{forecast[2].min_temp}}°</p>
                     </div>
                     <div class="precipchance">
-                        <p>{{forecast[2].precip}}</p>
+                        <p>Precipitation: {{forecast[2].precip}}%</p>
                     </div>
                 </div>
                 <div class="daythree">
-                    <div class="image"></div>
+                    <div class="image">
+                        <p>{{forecast[3].description_icon}}</p>
+                    </div>
                     <div class="hightemp">
-                        <p class="degree_symbol">High - {{forecast[3].max_temp}}</p>
+                        <p class="degree_symbol">High: {{forecast[3].max_temp}}°</p>
                     </div>
                     <div class="lowtemp">
-                        <p class="degree_symbol">Low - {{forecast[3].min_temp}}</p>
+                        <p class="degree_symbol">Low: {{forecast[3].min_temp}}°</p>
                     </div>
                     <div class="precipchance">
-                        <p>{{forecast[3].precip}}</p>
+                        <p>Precipitation: {{forecast[3].precip}}%</p>
                     </div>
                 </div>
                 <div class="dayfour">
-                    <div class="image"></div>
+                    <div class="image">
+                        <p>{{forecast[4].description_icon}}</p>
+                    </div>
                     <div class="hightemp">
-                        <p class="degree_symbol">High - {{forecast[4].max_temp}}</p>
+                        <p class="degree_symbol">High: {{forecast[4].max_temp}}°</p>
                     </div>
                     <div class="lowtemp">
-                        <p class="degree_symbol">Low - {{forecast[4].min_temp}}</p>
+                        <p class="degree_symbol">Low: {{forecast[4].min_temp}}°</p>
                     </div>
                     <div class="precipchance">
-                        <p>{{forecast[4].precip}}</p>
+                        <p>Precipitation: {{forecast[4].precip}}%</p>
                     </div>
                 </div>
                 <div class="dayfive">
-                    <div class="image"></div>
+                    <div class="image">
+                        <p>{{forecast[5].description_icon}}</p>
+                    </div>
                     <div class="hightemp">
-                        <p class="degree_symbol">High - {{forecast[5].max_temp}}</p>
+                        <p class="degree_symbol">High: {{forecast[5].max_temp}}°</p>
                     </div>
                     <div class="lowtemp">
-                        <p class="degree_symbol">Low - {{forecast[5].min_temp}}</p>
+                        <p class="degree_symbol">Low: {{forecast[5].min_temp}}°</p>
                     </div>
                     <div class="precipchance">
-                        <p>{{forecast[5].precip}}</p>
+                        <p>Precipitation: {{forecast[5].precip}}%</p>
                     </div>
                 </div>
                 <div class="daysix">
-                    <div class="image"></div>
+                    <div class="image">
+                        <p>{{forecast[6].description_icon}}</p>
+                    </div>
                     <div class="hightemp">
-                        <p class="degree_symbol">High - {{forecast[6].max_temp}}</p>
+                        <p class="degree_symbol">High: {{forecast[6].max_temp}}°</p>
                     </div>
                     <div class="lowtemp">
-                        <p class="degree_symbol">Low - {{forecast[6].min_temp}}</p>
+                        <p class="degree_symbol">Low: {{forecast[6].min_temp}}°</p>
                     </div>
                     <div class="precipchance">
-                        <p>{{forecast[6].precip}}</p>
+                        <p>Precipitation: {{forecast[6].precip}}%</p>
                     </div>
                 </div>
             </div>
