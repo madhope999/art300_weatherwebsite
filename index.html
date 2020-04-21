@@ -21,6 +21,19 @@
     </head>
     <body> 
         <div id="app">
+            <div class="icon">
+                <img v-bind:src="'/img/' + forecast[1].description_icon + '.png'" 
+                v-bind:alt="forecast[1].weather.description">
+            </div>
+            <div class="icon_01d "></div>
+            <div class="icon_02d "></div>
+            <div class="icon_03d "></div>
+            <div class="icon_04d "></div>
+            <div class="icon_09d "></div>
+            <div class="icon_10d "></div>
+            <div class="icon_11d "></div>
+            <div class="icon_13d "></div>
+            <div class="icon_50d "></div>
             <div class="masthead">
                 <div class="title">
                     <h1> Clear Skies </h1>
@@ -40,7 +53,7 @@
                     <p class="degree_symbol current">{{current.temp.current}}</p>
                 </div>
                 <div class="image"></div>
-                    <p class="icon">{{current.description_icon}}</p>
+                    <p class="icon_01d">{{current.description_icon}}</p>
                 <div class="high">
                     <p class="degree_symbol high">{{current.temp.high}}</p>
                 </div>

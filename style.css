@@ -13,6 +13,41 @@ body {
 
   }
 
+  .icon_01d{
+    background-image: url("https://raw.githubusercontent.com/madhope999/art300_weatherwebsite/master/icons/01d.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+} 
+
+.icon_02d{
+  background-image: url("https://raw.githubusercontent.com/madhope999/art300_weatherwebsite/master/icons/02d.png");
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+
+.icon_03d{
+  background-image: url("https://raw.githubusercontent.com/madhope999/art300_weatherwebsite/master/icons/03d.png");   
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+
+.icon_09d{
+  background-image: url("https://raw.githubusercontent.com/madhope999/art300_weatherwebsite/master/icons/09d.png"); 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+
+.icon_13d{
+  background-image: url("https://raw.githubusercontent.com/madhope999/art300_weatherwebsite/master/icons/13d.png"); 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+
 .masthead {
   display: grid;
   grid-template-columns: 1fr 1fr;
